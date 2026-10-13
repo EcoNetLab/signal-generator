@@ -42,7 +42,7 @@ t, signal = generate_sine_wave(frequency, duration)
 
 # Write to wav file
 write(
-    "sin-waves/{}seconds-{}Hz.wav".format(duration, frequency),
+    "sine-waves/{}seconds-{}Hz.wav".format(duration, frequency),
     int(1/(t[1]-t[0])),
     signal.astype(np.float32)
 )
